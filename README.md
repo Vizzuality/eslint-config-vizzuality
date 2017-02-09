@@ -48,3 +48,17 @@ Example of `.eslintrc.json`:
   }
 }
 ```
+
+Run eslint:
+
+```bash
+./node_modules/.bin/eslint --ext .js --ext .jsx .
+```
+
+Or add in your `package.json`:
+
+```json
+{
+  "test": "./node_modules/.bin/eslint --ext .js --ext .jsx ."
+}
+```
