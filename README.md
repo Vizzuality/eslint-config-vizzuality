@@ -14,7 +14,7 @@ npm install --save-dev eslint-config-vizzuality
 
 Add `"extends": "vizzuality"` to your .eslintrc
 
-Example of `.eslint.json`:
+Example of `.eslintrc.json`:
 
 ```json
 {
