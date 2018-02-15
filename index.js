@@ -4,6 +4,7 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': ['error', 'never'],
+    'function-paren-newline': ['error', 'consistent'],
     'import/extensions': 'never',
     'import/no-extraneous-dependencies': 0,
     'import/no-unresolved': [2, {
