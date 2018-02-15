@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vizzuality",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "This package provides Vizzuality's .eslintrc as an extensible shared config.",
   "main": "index.js",
   "scripts": {
@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/vizzuality/eslint-config-vizzuality#readme",
   "dependencies": {
-    "eslint": "^4.14.0",
+    "eslint": "^4.9.0",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0"
   }
 }
