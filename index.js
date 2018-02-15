@@ -4,10 +4,12 @@ module.exports = {
   ],
   rules: {
     'comma-dangle': ['error', 'never'],
+    'import/extensions': 'never',
     'import/no-extraneous-dependencies': 0,
     'import/no-unresolved': [2, {
       commonjs: true,
-      amd: true
+      amd: true,
+      caseSensitive: true
     }],
     'jsx-a11y/anchor-is-valid': 2,
     'no-console': ['error', {
@@ -21,6 +23,9 @@ module.exports = {
     }],
     'react/jsx-filename-extension': [1, {
       'extensions': ['.js', '.jsx']
+    }],
+    'react/forbid-prop-types': [true, {
+      'checkChildContextTypes': true
     }]
   }
 };
