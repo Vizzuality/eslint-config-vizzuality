@@ -14,19 +14,20 @@ module.exports = {
     }],
     'jsx-a11y/anchor-is-valid': 2,
     'no-console': ['error', {
-      'allow': ['warn', 'error', 'info']
+      allow: ['warn', 'error', 'info']
     }],
     'no-plusplus': ['error', {
-      'allowForLoopAfterthoughts': true
+      allowForLoopAfterthoughts: true
     }],
     'react/prefer-stateless-function': [true, {
-      'ignorePureComponents': true
+      ignorePureComponents: true
     }],
     'react/jsx-filename-extension': [1, {
-      'extensions': ['.js', '.jsx']
+      extensions: ['.js', '.jsx']
     }],
     'react/forbid-prop-types': [true, {
-      'checkChildContextTypes': true
-    }]
+      checkChildContextTypes: true
+    }],
+    'object-curly-newline': ['error', { multiline: true }]
   }
 };
