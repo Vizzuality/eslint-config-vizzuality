@@ -22,9 +22,9 @@ yarn add eslint@4.19.1 \
   eslint-config-vizzuality@latest \
   eslint-config-airbnb@17.0.0 \
   eslint-config-prettier@2.9.0 \
-  eslint-plugin-import@2.12.0 \
-  eslint-plugin-jsx-a11y@6.0.3 \
-  eslint-plugin-react@7.9.1 \
+  eslint-plugin-import@2.13.0 \
+  eslint-plugin-jsx-a11y@6.1.1 \
+  eslint-plugin-react@7.10.0 \
   eslint-plugin-prettier@2.6.2 \
   prettier@^0.11.0 \
   --dev
@@ -59,4 +59,50 @@ Or add in your `package.json`:
 {
   "test": "./node_modules/.bin/eslint --ext .js --ext .jsx ."
 }
+```
+
+## Recommendations
+
+### Prettier
+
+(Prettier)[https://github.com/prettier/prettier] is an opinionated code formatter that will enforces a consistent style by parsing your code and re-printing it with its own rules.
+
+It is already installed with this package as a devDependency and to use it just run:
+
+```bash
+prettier --single-quote --write "{app, components/**/*.js"
+```
+
+### Pre-commit hooks
+
+As a good practice running eslint only in git staged files using (lint-staged)[https://github.com/okonet/lint-staged] will have quicker analysis and ensure quality in each commit.
+
+And it is as easy as install the dependency:
+
+```bash
+npm install lint-staged
+```
+
+or
+
+```bash
+yarn add lint-staged
+```
+
+And add the following code to the `package.json`:
+
+```json
+"scripts": {
+    "start": "styleguidist server",
+    "build": "styleguidist build",
+    "deploy": "yarn run build && gh-pages -d styleguide",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --single-quote --write",
+      "eslint --quiet --fix",
+      "git add"
+    ]
+  },
 ```
