@@ -4,23 +4,23 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    'comma-dangle': [2, 'only-multine'],
-    'function-paren-newline': [2, 'consistent'],
-    'no-console': [2, { allow: ['warn', 'error', 'info'] }],
-    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
-    'object-curly-newline': [2, { multiline: true }],
-    'import/extensions': [2, { js: 'never', jsx: 'never' }],
-    'import/no-extraneous-dependencies': [2, {
+    'comma-dangle': ['error', 'only-multine'],
+    'function-paren-newline': ['error', 'consistent'],
+    'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
+    'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    'object-curly-newline': ['error', { multiline: true }],
+    'import/extensions': ['error', { js: 'never', jsx: 'never' }],
+    'import/no-extraneous-dependencies': ['error', {
       devDependencies: false,
       optionalDependencies: false,
       peerDependencies: false,
     }],
-    'import/no-unresolved': [2, {
+    'import/no-unresolved': ['error', {
       commonjs: true,
       amd: true,
       caseSensitive: true,
     }],
-    'jsx-a11y/anchor-is-valid': 2,
+    'jsx-a11y/anchor-is-valid': 'error',
     'react/forbid-prop-types': 1,
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/prefer-stateless-function': [2, { ignorePureComponents: true }],
