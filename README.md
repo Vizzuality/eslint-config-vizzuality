@@ -6,10 +6,19 @@ This package provides Vizzuality's .eslintrc as an extensible shared config.
 
 We export three ESLint configurations for your usage.
 
-Install:
+## Install
+
+Unsing npm:
 
 ```bash
-npm install --save-dev eslint eslint-config-vizzuality
+npx install-peerdeps --dev eslint-config-vizzuality
+npm install --save-dev eslint-config-vizzuality
+```
+
+Using yarn:
+
+```bash
+yarn add eslint@^4.19.1 eslint-config-vizzuality@^1.1.0 eslint-config-airbnb@^17.0.0 eslint-config-prettier@^2.9.0 eslint-plugin-import@^2.12.0 eslint-plugin-jsx-a11y@^6.0.3 eslint-plugin-react@^7.9.1 --dev
 ```
 
 Add `"extends": "vizzuality"` to your .eslintrc

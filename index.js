@@ -1,33 +1,28 @@
 module.exports = {
   extends: [
-    'airbnb'
+    'airbnb',
+    'prettier'
   ],
   rules: {
-    'comma-dangle': ['error', 'never'],
-    'function-paren-newline': ['error', 'consistent'],
-    'import/extensions': 'never',
-    'import/no-extraneous-dependencies': 0,
+    'comma-dangle': [2, 'only-multine'],
+    'function-paren-newline': [2, 'consistent'],
+    'no-console': [2, { allow: ['warn', 'error', 'info'] }],
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
+    'object-curly-newline': [2, { multiline: true }],
+    'import/extensions': [2, { js: 'never', jsx: 'never' }],
+    'import/no-extraneous-dependencies': [2, {
+      devDependencies: false,
+      optionalDependencies: false,
+      peerDependencies: false,
+    }],
     'import/no-unresolved': [2, {
       commonjs: true,
       amd: true,
-      caseSensitive: true
+      caseSensitive: true,
     }],
     'jsx-a11y/anchor-is-valid': 2,
-    'no-console': ['error', {
-      allow: ['warn', 'error', 'info']
-    }],
-    'no-plusplus': ['error', {
-      allowForLoopAfterthoughts: true
-    }],
-    'react/prefer-stateless-function': [true, {
-      ignorePureComponents: true
-    }],
-    'react/jsx-filename-extension': [1, {
-      extensions: ['.js', '.jsx']
-    }],
-    'react/forbid-prop-types': [true, {
-      checkChildContextTypes: true
-    }],
-    'object-curly-newline': ['error', { multiline: true }]
+    'react/forbid-prop-types': 1,
+    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+    'react/prefer-stateless-function': [2, { ignorePureComponents: true }],
   }
 };
