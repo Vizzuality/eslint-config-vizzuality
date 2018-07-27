@@ -4,7 +4,7 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    'comma-dangle': ['error', 'only-multine'],
+    'comma-dangle': ['error', { 'only-multine': true }],
     'function-paren-newline': ['error', 'consistent'],
     'no-console': ['error', { allow: ['warn', 'error', 'info'] }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
