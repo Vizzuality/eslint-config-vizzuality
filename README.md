@@ -70,7 +70,7 @@ Or add in your `package.json`:
 It is already installed with this package as a devDependency and to use it just run:
 
 ```bash
-prettier --single-quote --write "{app, components/**/*.js"
+prettier --single-quote --write "{app,components}/**/*.js"
 ```
 
 ### Pre-commit hooks
