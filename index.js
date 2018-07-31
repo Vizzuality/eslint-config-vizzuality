@@ -9,7 +9,7 @@ module.exports = {
     'no-console': [2, { allow: ['warn', 'error', 'info'] }],
     'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'object-curly-newline': [2, { consistent: true }],
-    'import/extensions': [2, { js: 'never', jsx: 'never' }],
+    'import/extensions': [2, 'always', { js: 'never', jsx: 'never' }],
     'import/no-extraneous-dependencies': [2, {
       devDependencies: false,
       optionalDependencies: false,
