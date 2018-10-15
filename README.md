@@ -25,7 +25,7 @@ yarn add eslint@5.7.0 \
   eslint-plugin-import@2.14.0 \
   eslint-plugin-jsx-a11y@6.1.1 \
   eslint-plugin-react@7.11.0 \
-  eslint-plugin-prettier@2.9.0 \
+  eslint-plugin-prettier@2.6.2 \
   prettier@^0.11.0 \
   --dev
 ```
