@@ -18,14 +18,14 @@ npm install --save-dev eslint-config-vizzuality
 Using yarn:
 
 ```bash
-yarn add eslint@4.19.1 \
+yarn add eslint@5.7.0 \
   eslint-config-vizzuality@latest \
-  eslint-config-airbnb@17.0.0 \
+  eslint-config-airbnb@17.1.0 \
   eslint-config-prettier@2.9.0 \
-  eslint-plugin-import@2.13.0 \
+  eslint-plugin-import@2.14.0 \
   eslint-plugin-jsx-a11y@6.1.1 \
-  eslint-plugin-react@7.10.0 \
-  eslint-plugin-prettier@2.6.2 \
+  eslint-plugin-react@7.11.0 \
+  eslint-plugin-prettier@2.9.0 \
   prettier@^0.11.0 \
   --dev
 ```

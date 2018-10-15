@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-vizzuality",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "description": "This package provides Vizzuality's .eslintrc as an extensible shared config.",
   "main": "index.js",
   "scripts": {
@@ -20,23 +20,23 @@
   },
   "homepage": "https://github.com/vizzuality/eslint-config-vizzuality#readme",
   "peerDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^17.0.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-react": "^7.11.0",
     "prettier": "^0.11.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^17.0.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.10.0",
+    "eslint-plugin-react": "^7.11.0",
     "prettier": "^0.11.0"
   }
 }
