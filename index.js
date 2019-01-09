@@ -1,8 +1,6 @@
 module.exports = {
   extends: [
-    'airbnb',
-    'prettier',
-    'prettier/react'
+    'airbnb'
   ],
   rules: {
     'comma-dangle': [2, 'only-multiline'],
@@ -24,7 +22,7 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 2,
     'react/forbid-prop-types': 1,
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'react/jsx-one-expression-per-line': [true, { "allow": 'single-child' }],
+    'react/jsx-one-expression-per-line': [true, { allow: 'single-child' }],
     'react/prefer-stateless-function': [2, { ignorePureComponents: true }],
   }
 };
